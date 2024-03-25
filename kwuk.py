@@ -1,4 +1,4 @@
-from math import sqrt as kvkoren
+import math
 
 print("hello solving system")
 bad_data = True
@@ -19,7 +19,7 @@ D = b*b - (4*a*c)
 print(f'value = {D}')
 
 if D > 0:
-    d = kvkoren(D)
+    d = math.sqrt(D)
     X1 = ((-b) + d)/(2*a)
     X2 = ((-b) - d)/(2 * a)
     print(f'1 root = {X1}, 2 root = {X2}')
