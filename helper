@@ -1,0 +1,48 @@
+docker run -d -p 80:80 mts:0.0.3
+docker run -it mts:0.0.7 bash
+docker build -t mts:0.0.7 .
+ docker rm $(docker ps -aq)
+docker rm $(docker ps -aq -f status=exited)
+ docker rmi $(docker images -aq)
+
+
+82  docker ps
+   83  docker ps -a
+   84  docker run -d -p 80:80 mts:0.0.3
+   85  docker ps -a
+   86  docker rm f47d355e0305
+   87  docker rm 34f45a8d9972
+   88  docker run -d -p 80:80 mts:0.0.3
+   90  docker ps
+   91  docker stop 34f45a8d9972
+   92  docker ps
+   93  docker run -d -p 80:80 mts:0.0.3
+   94  docker ps
+   95  docker ps -a
+   96  docker log e5e9d488bbc3
+   97  docker logs e5e9d488bbc3
+   98  docker ps -a
+   99  docker ps
+  102  docker logs e5e9d488bbc3
+  104  docker logs f47d355e0305
+  105  docker ps -a
+  107  docker build -t mts:0.0.5 .
+  108  docker run -d -p 80:80 mts:0.0.5
+  109  docker ps
+  110  docker ps -a
+  111  docker logs 3739be2d6ca5
+  112  docker run -it mts:0.0.5 bash
+  113  docker ps -a
+  114  docker logs 3739be2d6ca5
+  116  docker build -t mts:0.0.6 .
+  117  docker run -d -p 80:80 mts:0.0.6
+  118  docker ps
+  119  docker ps -a
+  120  docker logs bdad88ac6974
+  122  docker ps
+  124  docker ps -a
+  126  docker build -t mts:0.0.7 .
+  127  docker run -d -p 80:80 mts:0.0.7
+  128  docker ps
+  131  docker run -it mts:0.0.7 bash
+  132  docker ps
